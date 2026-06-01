@@ -16,4 +16,4 @@ jobs:
     - env:
         GITHUB_TOKEN: ${{ steps.octo-sts.outputs.token }}
       run: |
-        gh issue create --title "It works"
+        gh issue create --title "It works" --body "Even works really well"
