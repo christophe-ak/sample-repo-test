@@ -13,8 +13,7 @@ jobs:
       with:
         scope: christophe-ak/sample-repo-test
         identity: sample-repo-test
-
-- env:
-    GITHUB_TOKEN: ${{ steps.octo-sts.outputs.token }}
-  run: |
-    gh issue create --title "It works"
+    - env:
+        GITHUB_TOKEN: ${{ steps.octo-sts.outputs.token }}
+      run: |
+        gh issue create --title "It works"
